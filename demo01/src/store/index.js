@@ -2,6 +2,11 @@ import { createStore, applyMiddleware, compose } from 'redux'
 
 import reducer from './reducer'
 
+/**
+// 单用 reducer
+const store = createStore(reducer)
+*/
+
 /** 
 // 方案一：thunk
 import thunk from 'redux-thunk'
