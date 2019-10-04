@@ -1,18 +1,18 @@
 # redux-tutorial
 
 #### demo01 
-主要是 redux、redux-thunk 的使用方式，引入了 antd
+redux、redux-thunk、redux-saga 的使用方式
 
 #### demo02
-主要是 react-redux 的使用方式
+react-redux 的使用方式
 
 #### make-redux
-动手实现 Redux
+动手实现 redux
 
 #### 运行
 ```js
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 #### 其他说明
