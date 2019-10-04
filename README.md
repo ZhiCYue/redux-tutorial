@@ -6,7 +6,8 @@
 -|-
 demo01 | redux、redux-thunk、redux-saga 的使用方式
 demo02 | react-redux 的使用方式
-make-redux | 动手实现 redux
+make-redux | 手动实现 redux
+make-react-redux | 手动实现 react-redux
 
 ## 运行
 切换到示例项目的根目录，例如 demo01
