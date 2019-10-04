@@ -1,5 +1,7 @@
 # redux-tutorial
 
+包括：redux，redux-thunk，redux-saga，react-redux，react context 相关内容
+
 ## 目录说明
 
 名称 | 描述
