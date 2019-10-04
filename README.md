@@ -6,6 +6,9 @@
 #### demo02
 主要是 react-redux 的使用方式
 
+#### make-redux
+动手实现 Redux
+
 #### 运行
 ```js
 npm install
