@@ -10,6 +10,7 @@ react-redux 的使用方式
 动手实现 redux
 
 #### 运行
+切换到示例项目的根目录，例如 demo01
 ```js
 yarn install
 yarn start
