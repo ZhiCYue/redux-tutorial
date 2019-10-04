@@ -21,3 +21,7 @@ yarn start
 ## 其他说明
 - 使用了create-react-app 脚手架生成工具
 - 其中demo01 中使用了 antd，点击按钮会出现css-animation 异常，应该是 andt 的版本问题（待确定）
+
+## Referance
+作者：胡子大哈
+网址：http://huziketang.mangojuice.top/books/react/
