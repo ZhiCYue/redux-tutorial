@@ -6,8 +6,8 @@
 
 名称 | 描述
 -|-
-demo01 | redux、redux-thunk、redux-saga 的使用方式
-demo02 | react-redux 的使用方式
+redux | redux、redux-thunk、redux-saga 的使用方式
+react-redux | react-redux 的使用方式
 make-redux | 手动实现 redux
 make-react-redux | 手动实现 react-redux
 
