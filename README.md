@@ -24,5 +24,6 @@ yarn start
 
 ## Referance
 
-作者：胡子大哈<br/>
 网址：http://huziketang.mangojuice.top/books/react/
+
+https://jaysoo.ca/2016/01/03/managing-processes-in-redux-using-sagas/
