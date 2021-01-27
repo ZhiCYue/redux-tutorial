@@ -5,9 +5,12 @@ import {
   // fork, join, cancel,
   race
 } from 'redux-saga/effects';
+
 import { LOGIN, LOGOUT } from './actions';
 import { login } from './actions';
+
 import api from './api';
+
 import { delay } from './utils';
 
 function* authorize(credentials) {
