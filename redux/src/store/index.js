@@ -20,17 +20,27 @@ const store = createStore(reducer, enhancer)
 */
 
 // 方案二：saga
-import createSagaMiddleware from 'redux-saga'
-import mySages from './sagas'
+// import createSagaMiddleware from 'redux-saga'
+// import mySages from './sagas'
 
-const sagaMiddleware = createSagaMiddleware()
+// const sagaMiddleware = createSagaMiddleware()
+
+// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
+// window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose
+
+// const enhancer = composeEnhancers(applyMiddleware(sagaMiddleware))
+
+// const store = createStore(reducer, enhancer)
+// sagaMiddleware.run(mySages)
+
+// 方案三：redux-promise
+import promiseMiddleware from 'redux-promise';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
 window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose
 
-const enhancer = composeEnhancers(applyMiddleware(sagaMiddleware))
+const enhancer = composeEnhancers(applyMiddleware(promiseMiddleware))
 
 const store = createStore(reducer, enhancer)
-sagaMiddleware.run(mySages)
 
 export default store

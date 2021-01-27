@@ -31,8 +31,17 @@ class TodoList extends Component{
   }
 
   deleteItem(index) {
+    // const action = deleteItemAction(index)
+    // store.dispatch(action)
+
+    // redux-promise 示例
     const action = deleteItemAction(index)
-    store.dispatch(action)
+    const promiseAction = function () {
+      return new Promise((resolve, reject) => {
+        resolve(action);
+      })
+    };
+    store.dispatch(promiseAction())
   }
 
   addItem() {
