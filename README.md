@@ -24,7 +24,7 @@ yarn start
 
 ## Referance
 
-网址：http://huziketang.mangojuice.top/books/react/
+网址：
 
 https://jaysoo.ca/2016/01/03/managing-processes-in-redux-using-sagas/
 https://stackoverflow.com/questions/34930735/pros-cons-of-using-redux-saga-with-es6-generators-vs-redux-thunk-with-es2017-asy/34933395#34933395
