@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css'
 
-import store from './store'
+import store from './store/new'
 import { Provider } from 'react-redux'
 
 import TodoList from './TodoList'

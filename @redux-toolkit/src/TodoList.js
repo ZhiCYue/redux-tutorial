@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import TodoListUI from './TodoListUI'
 import { changeInput, addItem, deleteItem } from './store/todoSlice'
 
-import store from './store'
+import store from './store/new'
 
 class TodoList extends Component{
   changeInputValue = (e) => {
