@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import TodoListUI from './TodoListUI'
-import { changeInput, addItem, deleteItem, setList } from './store/todoSlice'
+import { changeInput, addItem, deleteItem } from './store/todoSlice'
+
+import store from './store'
 
 class TodoList extends Component{
   changeInputValue = (e) => {
-    this.props.changeInput(e.target.value)
+    store.dispatch(changeInput(e.target.value))
   }
 
   deleteItem = (index) => {
-    this.props.deleteItem(index)
+    store.dispatch(deleteItem(index))
   }
 
   addItem = () => {
-    this.props.addItem()
+    store.dispatch(addItem())
   }
 
   render() {
@@ -27,7 +29,6 @@ class TodoList extends Component{
       />
     )
   }
-
 }
 
 const stateToProps = (state) => {
@@ -37,21 +38,4 @@ const stateToProps = (state) => {
   }
 }
 
-const dispatchToProps = (dispatch) => {
-  return {
-    changeInput(value) {
-      dispatch(changeInput(value))
-    },
-    addItem() {
-      dispatch(addItem())
-    },
-    deleteItem(index) {
-      dispatch(deleteItem(index))
-    },
-    setList() {
-      dispatch(setList())
-    }
-  }
-}
-
-export default connect(stateToProps, dispatchToProps)(TodoList)
+export default connect(stateToProps, null)(TodoList)
