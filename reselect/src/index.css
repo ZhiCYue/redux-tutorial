@@ -1,0 +1,10 @@
+.box {
+  background: yellowgreen;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.box span {
+  text-align: center;
+}
